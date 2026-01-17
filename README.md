@@ -8,17 +8,17 @@ Sistema web para gerenciamento de agendamentos de consultas médicas, desenvolvi
 
 ## 📋 Índice
 
-- [Visão Geral](#visão geral)
+- [Visão Geral](#visão-geral)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias](#tecnologias)
 - [Arquitetura](#arquitetura)
-- [Estrutura de Diretórios](#estrutura de diretórios)
+- [Estrutura de Diretórios](#estrutura-de-diretórios)
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [API e Endpoints](#api-e-endpoints)
 - [Validação](#validação)
-- [Tratamento de Erros](#tratamento de erros)
+- [Tratamento de Erros](#tratamento-de-erros)
 - [Contribuição](#contribuição)
 - [Licença](#licença)
 
