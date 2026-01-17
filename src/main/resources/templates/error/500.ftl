@@ -1,13 +1,9 @@
-<#include "/layout/base.ftl">
+<#import "/layout/base.ftl" as base>
 
 <#assign title = "Erro 500">
-<#assign header = "Erro interno do servidor">
-<#assign footer = "© Clínica 2026">
+<#assign header = "Erro interno">
+<#assign footer = "Clínica">
 
-<@layout>
-    <section>
-        <h2>Erro 500</h2>
-        <p>${mensagem!"Ocorreu um erro interno no sistema."}</p>
-        <a href="/">Voltar para Home</a>
-    </section>
-</@layout>
+<@base.layout>
+    <p>${mensagem!"Erro interno."}</p>
+</@base.layout>

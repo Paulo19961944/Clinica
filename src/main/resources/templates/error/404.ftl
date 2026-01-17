@@ -1,4 +1,4 @@
-<#include "/layout/base.ftl">
+<#import "/layout/base.ftl" as layout>
 
 <#assign title = "Erro 404">
 <#assign header = "Página não encontrada">

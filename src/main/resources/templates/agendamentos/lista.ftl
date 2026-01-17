@@ -1,10 +1,10 @@
-<#include "/layout/base.ftl">
+<#import "/layout/base.ftl" as layout>
 
 <#assign title = "Lista de Agendamentos">
 <#assign header = "Agendamentos">
 <#assign footer = "© Clínica 2026">
 
-<@layout>
+<@layout.layout>
     <section>
         <h2>Agendamentos</h2>
 
@@ -26,4 +26,4 @@
 
         <a href="/agendamentos/novo">Novo Agendamento</a>
     </section>
-</@layout>
+</@layout.layout>

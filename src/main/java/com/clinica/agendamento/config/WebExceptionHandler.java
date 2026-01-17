@@ -37,6 +37,13 @@ public class WebExceptionHandler {
         return "error/500";
     }
 
+    @ExceptionHandler(org.springframework.web.servlet.NoHandlerFoundException.class)
+    public String handleSpring404(Model model) {
+        model.addAttribute("mensagem", "Página não encontrada.");
+        return "error/404";
+    }
+
+
     @ExceptionHandler(Exception.class)
     public String handleGeneric(Exception ex, Model model) {
         model.addAttribute("mensagem", "Erro interno inesperado.");
