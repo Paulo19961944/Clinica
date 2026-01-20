@@ -3,6 +3,7 @@
 :root{
     --bg-color: #fff;
     --primary-color: #02777B;
+    --border-color-header: 2px solid #02777B;
 }
 
 body {
@@ -17,7 +18,7 @@ header{
     justify-content: space-around;
     align-items: center;
     height: 160px;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: var(--border-color-header);
 }
 
 #logo{
