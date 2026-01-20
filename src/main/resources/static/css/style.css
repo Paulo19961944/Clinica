@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --bg-color: #fff;
+    --primary-color: #02777B;
+}
+
 body {
     font-family: "Raleway", sans-serif;
     margin: 0;
@@ -7,12 +12,12 @@ body {
 }
 
 header{
-    background-color: #ffffff;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 160px;
-    border-bottom: 2px solid #02777B;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 #logo{
@@ -21,7 +26,7 @@ header{
 }
 
 header, footer {
-    background-color: #fff;
+    background-color: var(--bg-color);
     padding: 10px;
     text-align: center;
 }
@@ -31,7 +36,7 @@ main {
 }
 
 a {
-    color: #02777B;
+    color: var(--primary-color);
     text-decoration: none;
     cursor: pointer;
 }
