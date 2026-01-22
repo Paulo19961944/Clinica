@@ -5,7 +5,7 @@ cls
 REM Script para build e execução da aplicação Docker (Windows)
 set IMAGE_NAME=clinica-agendamento
 set TAG=latest
-set CONTAINER_NAME=clinica-agendamento-container
+set CONTAINER_NAME=clinica-agendamento-app
 
 echo ==========================================
 echo   Build e Execução - Clínica de Agendamento

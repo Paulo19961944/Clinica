@@ -78,22 +78,22 @@ ipconfig
 
 ### Ver logs da aplicação
 ```bash
-docker logs -f clinica-agendamento-container
+docker logs -f clinica-agendamento-app
 ```
 
 ### Parar a aplicação
 ```bash
-docker stop clinica-agendamento-container
+docker stop clinica-agendamento-app
 ```
 
 ### Reiniciar a aplicação
 ```bash
-docker restart clinica-agendamento-container
+docker restart clinica-agendamento-app
 ```
 
 ### Remover o container
 ```bash
-docker rm -f clinica-agendamento-container
+docker rm -f clinica-agendamento-app
 ```
 
 ### Remover a imagem
@@ -103,13 +103,13 @@ docker rmi clinica-agendamento:latest
 
 ## Configurações do Container
 
-| Configuração | Valor |
-|--------------|-------|
-| Porta exposta | 8081 |
-| Porta interna | 8081 |
+| Configuração | Valor                                            |
+|--------------|--------------------------------------------------|
+| Porta exposta | 8081                                             |
+| Porta interna | 8081                                             |
 | Binding | 0.0.0.0:8081 (acessível de qualquer dispositivo) |
-| Nome do container | clinica-agendamento-container |
-| Timezone | America/Sao_Paulo |
+| Nome do container | clinica-agendamento-app                          |
+| Timezone | America/Sao_Paulo                                |
 
 ## Solução de Problemas
 
@@ -121,7 +121,7 @@ docker rmi clinica-agendamento:latest
 1. Pare o serviço/processo que está usando a porta 8081
 2. Ou altere a porta no comando de run:
 ```bash
-docker run -d --name clinica-agendamento-container -p 8082:8081 clinica-agendamento:latest
+docker run -d --name clinica-agendamento-app -p 8082:8081 clinica-agendamento:latest
 ```
 
 ### "Erro de memória insuficiente"
