@@ -4,6 +4,7 @@
     --bg-color: #fff;
     --primary-color: #02777B;
     --border-color-header: 2px solid #02777B;
+    --text-white: #fff;
 }
 
 body {
@@ -66,4 +67,118 @@ form input {
 
 button {
     padding: 8px 16px;
+}
+
+section.cards {
+    margin: 48px 0;
+    display: flex;
+    max-width: 1200px;
+    width: 90vw;
+    gap: 20px;
+}
+
+section.card-img{
+    flex: 1;
+}
+
+section.card-img img{
+  width: 100%;
+  border-radius: 16px;
+  animation: neonPulse 3s ease-in-out infinite;
+}
+
+section.card-text{
+    flex: 1;
+}
+
+section.card-text h2{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+a button.call-to-action{
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    font-weight: bold;
+    border: none;
+    border-radius: 999px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 48px;
+    align-self: center;
+    flex: 1;
+    font-size: 1rem;
+    animation: pulse 1.5s infinite;
+}
+
+a button.call-to-action:hover{
+    cursor: pointer;
+}
+
+.whatsapp-float{
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 64px;
+    height: 64px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    animation: whatsappPulseNeon 2s ease-in-out infinite;
+}
+
+.whatsapp-float i{
+    color: white;
+    font-size: 36px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 150, 255, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 10px rgba(0, 150, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 150, 255, 0);
+  }
+}
+
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow:
+      0 0 8px rgba(2, 119, 123, 0.4),
+      0 0 18px rgba(2, 119, 123, 0.25),
+      0 0 30px rgba(2, 119, 123, 0.15);
+  }
+  50% {
+    box-shadow:
+      0 0 12px rgba(2, 119, 123, 0.6),
+      0 0 24px rgba(2, 119, 123, 0.4),
+      0 0 40px rgba(2, 119, 123, 0.25);
+  }
+}
+
+@keyframes whatsappPulseNeon {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 6px rgba(2,119,123,0.4),
+      0 0 14px rgba(2,119,123,0.25),
+      0 0 22px rgba(2,119,123,0.15);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow:
+      0 0 12px rgba(2,119,123,0.6),
+      0 0 24px rgba(2,119,123,0.4),
+      0 0 40px rgba(2,119,123,0.25);
+  }
 }
